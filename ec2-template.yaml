@@ -1,0 +1,12 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: AWS CloudFormation Template to create an EC2 instance
+Resources:
+  MyEC2Instance:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      ImageId: 'ami-0abcdef1234567890'
+      InstanceType: 't2.micro'
+      KeyName: 'keymac'
+      SecurityGroupIds:
+        - 'sg-09b4a75e18ea90059'
+      SubnetId: 'subnet-034d3bccfd3af4611'
